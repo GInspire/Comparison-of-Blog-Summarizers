@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Blog-Sports"
+        android:textSize="35dp"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/graph"
+        android:layout_below="@id/mainHeading"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <LinearLayout
+        android:layout_below="@id/graph"
+        android:id="@+id/linearlsa"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_bright">
+        <TextView
+            android:id="@+id/LSA"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:text="LSA"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearlsa"
+        android:id="@+id/linearKLSum"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorAccent">
+        <TextView
+            android:id="@+id/KLSum"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:text="KLSUM"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearKLSum"
+        android:id="@+id/linearTextRank"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorGreen">
+        <TextView
+            android:id="@+id/textRank"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:text="TEXTRANK"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearTextRank"
+        android:id="@+id/linearLexRank"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorYellow"
+        android:alpha="10">
+        <TextView
+            android:id="@+id/LexRank"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:text="LEXRANK"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearLexRank"
+        android:id="@+id/linearluhn"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_dark">
+        <TextView
+            android:id="@+id/Luhn"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:text="LUHN"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearluhn"
+        android:text="NEXT"
+        android:onClick="next"/>
+</RelativeLayout>
